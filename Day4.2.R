@@ -34,10 +34,6 @@ match.strings <- function(string1,string2){
       }
 }
 
-
-
-
-
 invalid <- c()
 for(i in 1:length(md)){
       passphrase <- unlist(md[i])
