@@ -1,3 +1,15 @@
+# Day 4: Part 1
+
+# A passphrase consists of a series of words (lowercase letters) separated by spaces.
+# To ensure security, a valid passphrase must contain no duplicate words.
+
+# For example:
+
+# aa bb cc dd ee is valid.
+# aa bb cc dd aa is not valid - the word aa appears more than once.
+# aa bb cc dd aaa is valid - aa and aaa count as different words.
+# The system's full passphrase list is available as your puzzle input. How many passphrases are valid?
+
 #need to look row by row and see if there are duplicate "words" in the row
 #subset each each row first
 #compare element 1 to all its neighbors downstream. 
