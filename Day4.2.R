@@ -1,6 +1,17 @@
 #find the number of valid passphrases 
 # valid passphrases contain no 2 words that are "anagrams" of each other
 #no 2 words can contain the same letters. 
+# a passphrase is invalid if any word's letters can be rearranged to form any other word in the passphrase.
+
+# For example:
+
+# abcde fghij is a valid passphrase.
+# abcde xyz ecdab is not valid - the letters from the third word can be rearranged to form the first word.
+# a ab abc abd abf abj is a valid passphrase, because all letters need to be used when forming another word.
+# iiii oiii ooii oooi oooo is valid.
+# oiii ioii iioi iiio is not valid - any of these words can be rearranged to form any other word.
+# Under this new system policy, how many passphrases are valid?
+
 #make pairwise comparisons between every member of a row/passphrase
 #use a counter to keep track of the passphrases that have a match; these are the invalid passphrases
 #subtract the # of invalid passphrases from the total # of passphrases in dataset 
